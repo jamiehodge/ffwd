@@ -15,4 +15,6 @@ Gem::Specification.new do |gem|
   gem.require_paths = ["lib"]
   gem.version       = FFWD::VERSION
   
+  gem.add_development_dependency "rake"
+  gem.add_development_dependency "minitest"
 end

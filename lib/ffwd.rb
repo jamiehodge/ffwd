@@ -1,5 +1,5 @@
-require "ffwd/version"
+require_relative "ffwd/version"
 
 module FFWD
-  # Your code goes here...
 end
+

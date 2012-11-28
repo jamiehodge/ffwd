@@ -6,7 +6,7 @@ Gem::Specification.new do |gem|
   gem.email         = ["jamiehodge@me.com"]
   gem.description   = %q{FFMPEG client}
   gem.summary       = %q{FFMPEG client}
-  gem.homepage      = ""
+  gem.homepage      = "http://jamiehodge.github.com/ffwd/"
 
   gem.files         = `git ls-files`.split($\)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }

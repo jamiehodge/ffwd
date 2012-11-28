@@ -1,5 +1,5 @@
 require "ffwd/version"
 
-module Ffwd
+module FFWD
   # Your code goes here...
 end

@@ -2,7 +2,7 @@ require_relative "subprocess"
 require_relative "options"
 
 module FFWD
-  class FFProbe
+  class MPEG
     
     def initialize(args={})
       @gateway = args.fetch(:gateway, Subprocess.new)
@@ -18,16 +18,11 @@ module FFWD
     attr_reader :gateway, :options
     
     def cmd(str)
-      ["ffprobe", Options.new(options), str].compact.join(" ")
+      ["ffmpeg", Options.new(options), str].compact.join(" ")
     end
     
     def defaults
-      {
-        v: "quiet",
-        print_format: "json",
-        show_format: true,
-        show_streams: true
-      }
+      { v: "quiet", y: true }
     end
   end
 end

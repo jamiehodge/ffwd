@@ -1,11 +1,11 @@
 require_relative "../../helper"
-require_relative "../../../lib/ffwd/ffprobe"
+require_relative "../../../lib/ffwd/probe"
 
 module FFWD
-  class FFProbeTest < MiniTest::Unit::TestCase
+  class ProbeTest < MiniTest::Unit::TestCase
 
     def subject
-      @ffprobe ||= FFProbe.new(gateway: gateway)
+      @ffprobe ||= Probe.new(gateway: gateway)
     end
     
     def gateway

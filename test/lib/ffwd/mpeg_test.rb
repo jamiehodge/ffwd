@@ -1,11 +1,11 @@
 require_relative "../../helper"
-require_relative "../../../lib/ffwd/ffmpeg"
+require_relative "../../../lib/ffwd/mpeg"
 
 module FFWD
-  class FFMPEGTest < MiniTest::Unit::TestCase
+  class MPEGTest < MiniTest::Unit::TestCase
     
     def subject
-      @ffmpeg ||= FFMPEG.new(gateway: gateway)
+      @ffmpeg ||= MPEG.new(gateway: gateway)
     end
     
     def gateway
